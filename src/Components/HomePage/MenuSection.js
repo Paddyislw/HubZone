@@ -38,7 +38,7 @@ export default function MenuSection() {
       )
     }
   },[category])
-  console.log(data)
+ //console.log(data)
   return (
     <div className=''>
         <div className='flex justify-center mt-20 flex-col items-center w-[1250px] mx-auto'>
@@ -53,7 +53,7 @@ export default function MenuSection() {
               {data.map((e,i)=>{
                 return(
                   <div key={i} className=''>
-                  <Product price={e.price} img={e.image01} name={e.title}/>
+                  <Product price={e.price} img={e.image01} name={e.title} id={e.id}/>
                   </div>
                 )
               })}

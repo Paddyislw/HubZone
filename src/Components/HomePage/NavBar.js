@@ -13,8 +13,8 @@ export default function NavBar() {
                 <div className='categories flex items-center space-x-12'>
                     <Link to='/'><p className='font-semibold active:text-red-600 text-red-600'>Home</p></Link>
                     <Link to='/foods'>  <p className='font-semibold active:text-red-600 hover:text-red-600'>Foods</p></Link>
-                  <Link to='/cart'>  <p className='font-semibold active:text-red-600 hover:text-red-600'>Cart</p></Link>
-                 <Link to='/contact'>  <p className='font-semibold active:text-red-600 hover:text-red-600'>Contact</p></Link> 
+                    <Link to='/cart'>  <p className='font-semibold active:text-red-600 hover:text-red-600'>Cart</p></Link>
+                    <Link to='/contact'>  <p className='font-semibold active:text-red-600 hover:text-red-600'>Contact</p></Link>
                 </div>
                 <div className='buttons flex items-center space-x-3'>
                     <button><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20"><path fill="none" d="M0 0h24v24H0z" /><path d="M4 16V4H2V2h3a1 1 0 0 1 1 1v12h12.438l2-8H8V5h13.72a1 1 0 0 1 .97 1.243l-2.5 10a1 1 0 0 1-.97.757H5a1 1 0 0 1-1-1zm2 7a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm12 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4z" /></svg></button>

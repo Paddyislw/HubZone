@@ -23,13 +23,13 @@ export default function AllFoodsPage() {
             setend((e.selected * 10) + 10)
         }
 
-        console.log('hey')
-        console.log(e.selected)
+     //   console.log('hey')
+     //   console.log(e.selected)
     }
     useEffect(() => {
         setdata(products.slice(start, end))
-        console.log(start)
-        console.log(data)
+        //console.log(start)
+       // console.log(data)
     }, [start])
     return (
         <div className='bg-gray-50'>
@@ -48,12 +48,12 @@ export default function AllFoodsPage() {
                 {/* Main Data  */}
                 <div className='mx-[150px] mt-20'>
                     <input className='border-2 mb-10 w-[350px] px-3 py-2 rounded' placeholder='what are you looking for ? '/>
-                    <div className='grid grid-cols-4 '>
+                    <div className='grid grid-cols-4  '>
 
                         {data.map((e, i) => {
                             return (
                                 <div key={i}>
-                                    <Product price={e.price} img={e.image01} name={e.title} />
+                                    <Product price={e.price} img={e.image01} name={e.title} id={e.id}/>
                                 </div>
                             )
                         })}
