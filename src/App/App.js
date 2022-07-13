@@ -3,6 +3,9 @@ import HomePage from '../Components/HomePage/HomePage'
 import { Routes, Route } from 'react-router-dom';
 import NavBar from '../Components/HomePage/NavBar';
 import Footer from '../Components/HomePage/Footer';
+import AllFoodsPage from '../Components/FoodsPage/AllFoodsPage';
+import ContactPage from '../Components/ContactPage/ContactPage';
+import CartPage from '../Components/CartPage/CartPage';
 
 export default function App() {
   return (
@@ -11,6 +14,9 @@ export default function App() {
       <NavBar />
       <Routes>
         <Route path='/' element={<HomePage />} />
+        <Route path ='/foods' element={<AllFoodsPage/>}/>
+        <Route path ='/contact' element={<ContactPage/>}/>
+        <Route path ='/cart' element={<CartPage/>}/>
       </Routes>
       <Footer />
 

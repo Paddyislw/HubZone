@@ -40,19 +40,19 @@ export default function MenuSection() {
   },[category])
   console.log(data)
   return (
-    <div>
-        <div className='flex justify-center mt-20 flex-col items-center'>
+    <div className=''>
+        <div className='flex justify-center mt-20 flex-col items-center w-[1250px] mx-auto'>
             <p className='text-3xl font-bold'>Popular Foods</p>
-            <div className='flex space-x-32 bg-red-500 rounded px-5 py-4 mt-10  justify-center text-white w-[1400px]'>
+            <div className='flex space-x-32 bg-red-500 rounded px-5 py-4 mt-10  justify-center text-white w-full'>
               <button onClick={()=>{setcategory('all')}}>All</button>
               <button className='flex items-center' onClick={()=>{setcategory('Burger')}}><img className='w-10 mr-2' src={hamburger}/>Burger</button>
               <button className='flex items-center' onClick={()=>{setcategory('Pizza')}}><img className='w-10 mr-2' src={pizza}/>Pizza</button>
               <button className='flex items-center' onClick={()=>{setcategory('Bread')}}><img className='w-10 mr-2' src={bread}/>Bread</button>
             </div>
-            <div className='grid grid-cols-4 mt-10 mb-20'>
+            <div className='grid grid-cols-4 mt-10 mb-20  space-x-3 grid-flow-row'>
               {data.map((e,i)=>{
                 return(
-                  <div key={i}>
+                  <div key={i} className=''>
                   <Product price={e.price} img={e.image01} name={e.title}/>
                   </div>
                 )
