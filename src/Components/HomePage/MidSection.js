@@ -11,19 +11,19 @@ export default function MidSection() {
     return (
         <div>
             <div className='flex justify-between mt-20'>
-                <div className='bg-red-100 w-[300px] flex rounded text-sm font-bold items-center space-x-2 py-6 px-3'>
+                <div className='bg-red-100 w-[300px] flex rounded text-sm font-bold items-center space-x-2 py-6 px-3 hover:scale-110 transition-all ease-in'>
                     <img src={category01} className='w-14' />
                     <p>Fastfood</p>
                 </div>
-                <div className='bg-red-100  w-[300px] flex rounded text-sm font-bold items-center space-x-2 py-6 px-3'>
+                <div className='bg-red-100  w-[300px] flex rounded text-sm font-bold items-center space-x-2 py-6 px-3 hover:scale-110 transition-all ease-in'>
                     <img src={category02} className='w-14' />
                     <p>Pizza</p>
                 </div>
-                <div className='bg-red-100  w-[300px] flex rounded text-sm font-bold items-center space-x-2 py-6 px-3'>
+                <div className='bg-red-100  w-[300px] flex rounded text-sm font-bold items-center space-x-2 py-6 px-3 hover:scale-110 transition-all ease-in'>
                     <img src={category03} className='w-14' />
                     <p>Asian Food</p>
                 </div>
-                <div className='bg-red-100  w-[300px] flex rounded text-sm font-bold items-center space-x-2 py-6 px-3'>
+                <div className='bg-red-100  w-[300px] flex rounded text-sm font-bold items-center space-x-2 py-6 px-3 hover:scale-110 transition-all ease-in'>
                     <img src={category04} className='w-14' />
                     <p>Row Meal</p>
                 </div>
