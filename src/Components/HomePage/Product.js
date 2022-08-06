@@ -15,11 +15,11 @@ export default function Product(props) {
   const url = `/product/${props.id}`
   return (
 
-    <div className=''>
+   
       
       
       
-      <div className='flex flex-col items-center border-[1px] border-gray-200 rounded w-[300px]  mb-8 relative'>
+      <div className='flex flex-col items-center border-[1px] border-gray-200 rounded w-[300px] xl:w-[270px] mb-8 relative sm:w-[150px] mx-auto'>
       {isOpen ?
         <Alert status='success' position='absolute' top='-2' zIndex={100} left='0' alignItems='center' textAlign='center' justifyContent='center' >
           <AlertIcon />
@@ -35,16 +35,16 @@ export default function Product(props) {
         </Alert> : ''
       }
         <Link to={url}>
-          <img src={props.img} className='w-28 py-4 hover:scale-125 transition-all mx-auto' />
-          <p className='font-semibold pb-3'>{props.name}</p>
+          <img src={props.img} className='w-28 py-4 hover:scale-125 transition-all mx-auto sm:w-16' />
+          <p className='font-semibold pb-3 sm:text-xs'>{props.name}</p>
         </Link>
-        <div className='flex justify-between w-60 py-6'>
-          <p className='text-lg font-bold text-red-600'>Rs {props.price}</p>
-          <button className='border-[1px] border-red-500 text-white bg-red-500 rounded px-6 py-[3px] hover:text-red-600 hover:bg-red-200 hover:border-red-200' value={props.id} onClick={addHandler}>Add to Cart</button>
+        <div className='flex justify-between w-60 py-6 sm:w-32'>
+          <p className='text-lg font-bold text-red-600 sm:text-sm'>Rs {props.price}</p>
+          <button className='border-[1px] border-red-500 text-white bg-red-500 rounded px-6 py-[3px] hover:text-red-600 hover:bg-red-200 hover:border-red-200 sm:px-1 sm:text-xs' value={props.id} onClick={addHandler}>Add to Cart</button>
 
         </div>
       </div>
-    </div>
+   
 
   )
 }

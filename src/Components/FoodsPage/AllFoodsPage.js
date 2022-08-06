@@ -49,7 +49,7 @@ export default function AllFoodsPage() {
                 {/*Banner */}
                 <div className='banner h-44  relative bg-gradient-to-tl from-gray-700 to-gray-600'>
                     <img src={bannerfood} className='w-full h-full object-cover mix-blend-overlay absolute ' />
-                    <p className='text-white text-5xl font-mono font-bold px-36 py-14'>All Foods</p>
+                    <p className='text-white text-5xl font-mono font-bold px-36 py-14 sm:text-4xl sm:px-20'>All Foods</p>
                 </div>
 
 
@@ -57,9 +57,9 @@ export default function AllFoodsPage() {
 
 
                 {/* Main Data  */}
-                <div className='mx-[150px] mt-20'>
-                    <input className='border-2 mb-10 w-[350px] px-3 py-2 rounded' placeholder='what are you looking for ? ' value={text} onChange={textHandler}/>
-                    <div className='grid grid-cols-4  '>
+                <div className='mx-[150px] mt-20 xl:mx-[80px] md:mx-[20px] '>
+                    <input className='border-2 mb-10 w-[350px] px-3 sm:w-[250px] py-2 rounded' placeholder='what are you looking for ? ' value={text} onChange={textHandler}/>
+                    <div className='grid grid-cols-4 2xl:grid-cols-3 lg:grid-cols-2 '>
 
                         {data.map((e, i) => {
                             return (

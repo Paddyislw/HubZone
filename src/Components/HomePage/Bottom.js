@@ -5,7 +5,7 @@ import network from '../../media/network.png'
 export default function Bottom() {
     return (
         <div>
-            <div className='flex justify-between'>
+            <div className='flex justify-between md:flex-col md:items-center'>
                 <div className='splide flex flex-col'>
                     <p className='text-orange-600 text-xl font-semibold'>Testimonial</p>
                     <p className='text-4xl font-bold pb-6 '>What our <span className='text-orange-600'>customers</span> are saying</p>

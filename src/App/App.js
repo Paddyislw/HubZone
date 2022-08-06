@@ -7,6 +7,8 @@ import AllFoodsPage from '../Components/FoodsPage/AllFoodsPage';
 import ContactPage from '../Components/ContactPage/ContactPage';
 import CartPage from '../Components/CartPage/CartPage';
 import ProductPage from '../Components/ProductPage/ProductPage';
+import LoginPage from '../Components/User/LoginPage';
+import SignUpPage from '../Components/User/SignUpPage';
 
 export default function App() {
   return (
@@ -19,6 +21,8 @@ export default function App() {
         <Route path ='/contact' element={<ContactPage/>}/>
         <Route path ='/cart' element={<CartPage/>}/>
         <Route path ='/product/:id' element={<ProductPage/>}/>
+        <Route path='/login' element={<LoginPage/>}/>
+        <Route path='/signUp' element={<SignUpPage/>}/>
       </Routes>
       <Footer />
 

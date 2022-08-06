@@ -10,22 +10,26 @@ import service03 from '../../media/service-03.png'
 export default function MidSection() {
     return (
         <div>
-            <div className='flex justify-between mt-20'>
-                <div className='bg-red-100 w-[300px] flex rounded text-sm font-bold items-center space-x-2 py-6 px-3 hover:scale-110 transition-all ease-in'>
-                    <img src={category01} className='w-14' />
-                    <p>Fastfood</p>
+            <div className='flex justify-center space-x-4 mt-20 lg:flex-col lg:items-center lg:space-y-4 lg:space-x-0'>
+                <div className='flex space-x-4'>
+                    <div className='bg-red-100 w-[270px] xl:w-[220px] sm:w-[150px] flex rounded text-sm font-bold items-center space-x-2 py-6 px-3 hover:scale-110 transition-all ease-in'>
+                        <img src={category01} className='w-14' />
+                        <p>Fastfood</p>
+                    </div>
+                    <div className='bg-red-100  w-[270px] xl:w-[220px] sm:w-[150px] flex rounded text-sm font-bold items-center space-x-2 py-6 px-3 hover:scale-110 transition-all ease-in'>
+                        <img src={category02} className='w-14' />
+                        <p>Pizza</p>
+                    </div>
                 </div>
-                <div className='bg-red-100  w-[300px] flex rounded text-sm font-bold items-center space-x-2 py-6 px-3 hover:scale-110 transition-all ease-in'>
-                    <img src={category02} className='w-14' />
-                    <p>Pizza</p>
-                </div>
-                <div className='bg-red-100  w-[300px] flex rounded text-sm font-bold items-center space-x-2 py-6 px-3 hover:scale-110 transition-all ease-in'>
-                    <img src={category03} className='w-14' />
-                    <p>Asian Food</p>
-                </div>
-                <div className='bg-red-100  w-[300px] flex rounded text-sm font-bold items-center space-x-2 py-6 px-3 hover:scale-110 transition-all ease-in'>
-                    <img src={category04} className='w-14' />
-                    <p>Row Meal</p>
+                <div className='flex space-x-4'>
+                    <div className='bg-red-100  w-[270px] xl:w-[220px] sm:w-[150px] flex rounded text-sm font-bold items-center space-x-2 py-6 px-3 hover:scale-110 transition-all ease-in'>
+                        <img src={category03} className='w-14' />
+                        <p>Asian Food</p>
+                    </div>
+                    <div className='bg-red-100  w-[270px] xl:w-[220px] sm:w-[150px] flex rounded text-sm font-bold items-center space-x-2 py-6 px-3 hover:scale-110 transition-all ease-in'>
+                        <img src={category04} className='w-14' />
+                        <p>Row Meal</p>
+                    </div>
                 </div>
             </div>
             <div className='flex flex-col  items-center mt-32'>
@@ -35,21 +39,21 @@ export default function MidSection() {
                 <p className='text-sm text-gray-500'>blablablablablab lablablablablabla lablablablablabla</p>
                 <p className='text-sm text-gray-500'>blablablablablab lablablablablabla lablablablablabla</p>
             </div>
-            <div className='flex justify-between mt-20'>
-                <div className='flex flex-col items-center'>
-                    <img src={service01} className='w-24' />
+            <div className='flex justify-between mt-20 space-x-2'>
+                <div className='flex flex-col items-center '>
+                    <img src={service01} className='w-24 sm:w-16' />
                     <p className='font-bold'>Quick Delivery</p>
-                    <p className='text-sm text-gray-500'>Lorem, ipsum dolor sit amet consectetur</p><p className='text-sm text-gray-500'> Molestias aut, repellat ipsum </p>
+                    <p className='text-sm text-gray-500'>Lorem, ipsum dolor sit amet consectetur</p><p className='text-sm text-gray-500 lg:hidden'> Molestias aut, repellat ipsum </p>
                 </div>
-                <div className='flex flex-col items-center'>
-                    <img src={service02} className='w-24' />
+                <div className='flex flex-col items-center '>
+                    <img src={service02} className='w-24 sm:w-16' />
                     <p className='font-bold'>Super Dine In</p>
-                    <p className='text-sm text-gray-500'>Lorem, ipsum dolor sit amet consectetur</p><p className='text-sm text-gray-500'> Molestias aut, repellat ipsum </p>
+                    <p className='text-sm text-gray-500'>Lorem, ipsum dolor sit amet consectetur</p><p className='text-sm text-gray-500 lg:hidden'> Molestias aut, repellat ipsum </p>
                 </div>
-                <div className='flex flex-col items-center'>
-                    <img src={service03} className='w-24' />
+                <div className='flex flex-col items-center '>
+                    <img src={service03} className='w-24 sm:w-16' />
                     <p className='font-bold'>Easy Pick Up</p>
-                    <p className='text-sm text-gray-500'>Lorem, ipsum dolor sit amet consectetur </p><p className='text-sm text-gray-500'>Molestias aut, repellat ipsum </p>
+                    <p className='text-sm text-gray-500'>Lorem, ipsum dolor sit amet consectetur </p><p className='text-sm text-gray-500 lg:hidden'>Molestias aut, repellat ipsum </p>
                 </div>
             </div>
         </div>

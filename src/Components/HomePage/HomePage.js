@@ -10,7 +10,7 @@ export default function HomePage() {
     return (
         <div className='bg-gray-50'>
             
-            <div className='mx-48 bg-gray-50'>
+            <div className='mx-48 bg-gray-50 2xl:mx-32 xl:mx-20 lg:mx-16 md:mx-8'>
                 <LandingPage />
                 <MidSection />
                 <MenuSection />
